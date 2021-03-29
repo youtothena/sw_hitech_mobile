@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="웹에이전시,반응형웹개발,웹디자인,웹프로그래밍,HTML5,CSS3,자바스크립트,제이쿼리">
+    <meta name="description" content="웹애드는 웹표준을 준수하고 개발하는 웹에이전시입니다.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성우하이텍 제품소개 모바일</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font=awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="apple-touch-icon-precomposed" href="#">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/notosans_kr_CDN.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/sungwoo_footer_mobile.css">
+    <link rel="stylesheet" href="css/sw_product_mobile.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+	<script src=js/jquery-3.3.1.min.js></script>
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/sw_product_mobile.js"></script>
+    <script>
+        $(function(){
+            // 1. header
+
+//Submenu slideDown
+$('header .contents .down').click(function(){
+    if($(this).hasClass('active')){
+        $(this).removeClass('active');
+        $(this).children('dt').text('+');
+        $(this).siblings('.contents_box').stop().slideUp(500);
+    }else{
+        $(this).addClass('active');
+        $(this).children('dt').text('-');
+        $(this).siblings('.contents_box').stop().slideDown(500);
+    };
+});
+
+//Change Language
+$('header .change_lan').click(function(e){
+    e.preventDefault();
+    $('.change_lan').removeClass('contents_select');
+    $(this).addClass('contents_select');
+});
+
+// Search section
+$('header .search_icon').click(function(e){
+    e.preventDefault();
+    $('form').slideDown('500');
+});
+$('header .close').click(function(e){
+    e.preventDefault();
+    $('header form').slideUp('500');
+});
+
+        });
+    </script>
+</head>
+<body>
+    <div id='container'>
+        <header class="sw_header">
+             <ul class="main_logo">
+                 <li><a href="#"><img src="images/header_search.png" alt="검색아이콘" class="search_icon"></a></li>
+                 <li><a href="#"><img src="images/header_logo.png" alt=""></a></li>
+             </ul>
+             <input type="checkbox" id="sw_icon">
+             <label for="sw_icon">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </label>
+            <nav class="mobile_gnb">
+                 <ul class="icon">
+                     <li><a href="#"><img src="images/header_logo.png" alt=""></a></li>
+                 </ul>
+                 <ul class="gnb">
+                    <li><a href="#">기업정보</a></li>
+                   <li><a href="#">제품소개</a></li>
+                   <li><a href="#">제품 상세정보</a></li>
+                   <li><a href="#">인재채용</a></li>
+                </ul>
+                <div id="plus">
+                    <ul class="contents">
+                        <li>
+                                <dl class="down">
+                                    <dt class="plus_icon">+</dt>
+                                    <dd>언어설정</dd>
+                                </dl>
+                                <div class="contents_box lan">
+                                    <p><a href="#" class="change_lan contents_select">한국어(Korean)</a></p>
+                                    <p><a href="#" class="change_lan">영어(English)</a></p>
+                                </div>
+                        </li>
+                        <li>
+                                <dl class="down">
+                                    <dt class="plus_icon">+</dt>
+                                    <dd>사업장 소개</dd>
+                                </dl>
+                                <div class="contents_box">
+                                    <p><a href="#">서창공장</a></p>
+                                    <p><a href="#">정관공장</a></p>
+                                    <p><a href="#">코일센타</a></p>
+                                    <p><a href="#">R&D센터</a></p>
+                                    <p><a href="#">금형공장</a></p>
+                                    <p><a href="#">지사공장</a></p>
+                                    <p><a href="#">핫스템핑</a></p>
+                                    <p><a href="#">서울사무소</a></p>
+                                    <p><a href="#">(주)아산성우하이텍</a></p>
+                                </div>
+                        </li>
+                        <li>
+                                <dl class="down">
+                                    <dt class="plus_icon">+</dt>
+                                    <dd>오시는길</dd>
+                                </dl>
+                                <div class="contents_box">
+                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417087.28766184463!2d128.73363201918409!3d35.24395331103159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356882cd4a377421%3A0x9ed8df62dd2f9d7c!2z7ISx7Jqw7ZWY7J207YWN!5e0!3m2!1sko!2skr!4v1614743850595!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                 </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sns">
+                    <li><a href="https://www.facebook.com/pages/category/Automotive-Manufacturer/%EC%84%B1%EC%9A%B0%ED%95%98%EC%9D%B4%ED%85%8D-SUNGWOO-HITECH-807415382669763/" target="_blank"><img src="images/gnb_facebook.png" alt="페이스북아이콘"></a></li>
+                    <li><a href="https://blog.naver.com/swhitech1977" target="_blank"><img src="images/gnb_twitter.png" alt="트위터아이콘"></a></li>
+                    <li><a href="https://youtu.be/8ORiKXe12R8" target="_blank"><img src="images/gnb_youtube.png" alt="유튜브아이콘"></a></li>
+                </ul>
+            </nav>
+             <form action="#">
+                 <div id="finder">
+                    <span class="close"><img src="images/search_close.png" alt=""></span>
+                     <input type="text" id="text" placeholder="검색어를 입력하세요">
+                     <button>SEARCH</button>
+                 </div>
+             </form>
+         </header>
+        <article class="main_slide">
+            <div class="slideshow_container">
+				<img src="images/sw_product_main01.jpg" alt="슬라이드 이미지01">
+			</div>
+        </article>
+        <article class="econology">
+           <div class="econology_title">
+                <h2>HIGH-ECONOLOGY<hr></h2>
+               <p>
+                   청정 대체 에너지를 사용한 친환경 자동차로 <br>
+                   지구 온난화, 석유 자원 고갈로 위기에 처한 <br>
+                   인류의 미래를 헤쳐나갑니다.
+               </p>
+           </div>
+           <section class="econology_img">
+                <div class="first_img">
+                    <img src="images/sw_product_article_img02.jpg" alt="자동차 이미지">
+                    <a href="#">
+                        <img src="images/product_mobile_eco_title01.png" alt="배터리 타이틀">
+                    </a>
+                </div>
+                    
+                <div class="second_img01">
+                    <img src="images/sw_product_article_small_img01.jpg" alt="자동차 구조 이미지01">
+                </div>
+                <div class="second_img02 cf">
+                    <img src="images/sw_product_article_small_img02.jpg" alt="자동차 구조 이미지02">
+                </div>
+                <span><a href="#"><img src="images/product_mobile_eco_title02.png" alt="배터리 타이틀"></a></span>
+           </section>
+        </article>
+        <div class="line"></div>
+        <article class="friendly">
+            <div class="friendly_title">
+                <span class="title_num">01</span>
+                <h2>ECO-FRIENDLY&nbsp;CAR</h2>
+            </div>
+            <div class="friendly_img">
+                <img src="images/sw_product_eco_section_img01.jpg" alt="자동차 이미지">
+            </div>
+            <div class="friendly_txt">
+                <h3>ORGANIZATION</h3>
+                <a href="#" onclick="Info()"><button>SEE MORE</button></a>
+            </div>
+        </article>
+        <article class="smart">
+            <div class="smart_bg"></div>
+            <div class="smart_title">
+                <span class="title_num">02</span>
+                <h2>SMART&nbsp;CAR&nbsp;&nbsp;<small>sensor</small></h2>
+            </div>
+            <div class="smart_content">
+                <a href="#" onclick="Info()"><h3>원적외선 센서(FIR)</h3></a>
+                <img src="images/sw_product_eco_section_img02.jpg" alt="자동차 이미지">
+                <a href="#" onclick="Info()"><h3>라이다 센서(LiDAR)</h3></a>
+            </div>
+            <a href="#" onclick="Info()"><button>SEE MORE</button></a>
+		</article>
+        <article class="center">
+            <div class="center_title">
+                <span class="title_num">03</span>
+                <h2>R&amp;D&nbsp;CENTER</h2>
+            </div>
+            <div class="center_txt">
+                <h3>선도적 R&amp;D 센터 설립</h3>
+                <p>
+                    4차 산업혁명, 자율주행, 대체 에너지, 공유경제로 <br>
+                    한 치 앞을 알 수 없는 어려운 글로벌 자동차 시장에서, <br>
+                    <br>
+                    성우 하이텍은 축적된 연구를 기반으로 한 <br>
+                    신기술 신제품으로 한층 더 도약합니다.
+                </p>
+            </div>
+            <div class="center_img">
+                <section class="center_img01">
+                    <a href="#">
+                        <img src="images/sw_product_center_img01.jpg" class="w100" alt="센터 이미지01">
+                        <div class="text-effect">
+                            <h3>R&amp;D&nbsp;센터
+                                알아보기</h3>
+                            <a href="#"><img src="images/product_mobile_center_arrow.png" alt="화살표 이미지"></a>
+                        </div>
+                    </a>
+                </section>
+                <section class="center_img02">
+                    <a href="#">
+                        <img src="images/sw_product_center_img02.jpg" class="w100" alt="센터 이미지02">
+                        <div class="text-effect">
+                            <h3>연구분야
+                                알아보기</h3>
+                            <a href="#"><img src="images/product_mobile_center_arrow.png" alt="화살표 이미지"></a>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </article>
+        <footer>
+            <div class="footerbanner">
+                <ul>
+                    <li>
+                      <a href="https://www.renaultsamsungm.com/">
+                        <img src="images/footer_memb_01.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.hyundai.com/kr/ko/e">
+                            <img src="images/footer_memb_02.png"></a>  
+                    </li>
+                      <li>
+                        <a href="https://www.kia.com/kr/main.html">
+                            <img src="images/footer_memb_03.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.audi.co.kr/kr/web/ko.html">
+                            <img src="images/footer_memb_04.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.mercedes-benz.co.kr/passengercars/buy/MBM/introduction.html">
+                            <img src="images/footer_memb_05.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.bmw.co.kr/ko/index.html">
+                            <img src="images/footer_memb_06.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.chevrolet.co.kr/index.jsp">
+                            <img src="images/footer_memb_07.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.volkswagen.co.kr/ko.html">
+                            <img src="images/footer_memb_08.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.gm-korea.co.kr/gmkorea/index.do">
+                            <img src="images/footer_memb_09.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.nissan.co.kr/">
+                            <img src="images/footer_memb_10.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.jaguarkorea.co.kr/index.html">
+                            <img src="images/footer_memb_11.png"></a>  
+                    </li>
+                    <li>
+                        <a href="https://www.tesla.com/ko_kr">
+                            <img src="images/footer_memb_12.png"></a>  
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_logo">
+                <a href="#"><img src="images/footer_logo.png"></a>
+            </div>
+            <div class="footergnb">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">역사관</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#" class="mr">인재채용</a></li>
+                </ul>
+            </div>
+            <div class="footersns">
+                <ul>
+                    <li><a href="https://www.facebook.com/pages/category/Automotive-Manufacturer/%EC%84%B1%EC%9A%B0%ED%95%98%EC%9D%B4%ED%85%8D-SUNGWOO-HITECH-807415382669763/">
+                        <img src="images/footer_icon_facebook.png"></a></li>
+                    <li><a href="https://blog.naver.com/swhitech1977">
+                        <img src="images/footer_icon_twitter.png"></a></li>
+                    <li><a href="https://youtu.be/8ORiKXe12R8" class="mr">
+                        <img src="images/footer_icon_youtube.png"></a></li>
+                </ul>
+            </div>
+            <div class="footeraddress">
+                <div class="suchang">
+                    <h5>[서창공장] 50511 경상남도 양산시 소주공단 3길 50</h5>
+                    <h5>대표전화 : 070-7477-5000&nbsp;&nbsp;|&nbsp;&nbsp;팩스 : 055-366-5900</h5>
+                </div>
+                <div class="junggwan">
+                    <h5>[정관공장] 46020 부산광영시 기장군 정관읍 농공길 2-9 </h5>
+                    <h5>대표전화 : 070-7477-3516&nbsp;&nbsp;|&nbsp;&nbsp;팩스 : 051-728-3516</h5>
+                </div>
+            </div>
+            <div class="footer_last">
+                <p>COPYRIGHT&copy; 2021 C5(2V) SUNGWOO HITECH RENEWAL<br>.ALL RIGHT RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
